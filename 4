@@ -3,6 +3,9 @@
 
 using namespace std;
 
-int solution(int num1, int num2) {
-    return (int) ((double)num1 / num2 * 1000);
+int solution(int angle) {
+    if (angle < 90) return 1;
+    if (angle == 90) return 2;
+    if (angle < 180) return 3;
+    return 4;
 }
